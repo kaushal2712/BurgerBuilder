@@ -11,11 +11,11 @@ export default class CheckoutSummary extends Component {
         <div style={{ width: "100%", margin: "auto" }}>
           <Burger ingredients={this.props.ingredients} />
         </div>
-        <Button btnType="Success" clicked={this.props.checkoutContinued}>
-          CONTINUE
-        </Button>
         <Button btnType="Danger" clicked={this.props.checkoutCancelled}>
           CANCEL
+        </Button>
+        <Button btnType="Success" clicked={this.props.checkoutContinued}>
+          CONTINUE
         </Button>
       </div>
     );
